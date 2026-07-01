@@ -1,0 +1,15 @@
+# Build artifacts
+/gost
+*.o
+*.out
+
+# Editor and OS files
+.vscode/
+.DS_Store
+*~
+
+# Debug files
+*.dSYM/
+
+# Json files
+*.json
