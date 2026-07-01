@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
+
+#define GOST_IMPLEMENTATION
 #include "gost.h"
 
 int main(void) {
@@ -27,7 +29,7 @@ int main(void) {
         return 1;
     }
 
-    printf("Plaintext: ");
+    printf("Plaintext:  ");
     for (int i = 0; i < 8; i++) {
         printf("%02X ", plaintext[i]);
     }
@@ -44,7 +46,7 @@ int main(void) {
         return 1;
     }
 
-    printf("Decrypted: ");
+    printf("Decrypted:  ");
     for (int i = 0; i < 8; i++) {
         printf("%02X ", decrypted[i]);
     }
